@@ -1,4 +1,4 @@
-# 스프링 컨텍스트에 빈을 추가하는 법
+# 스프링 컨텍스트에 빈을 추가하기
 
 ## @Bean
 1. [스프링 컨텍스트 및 인스턴스 생성](https://github.com/syeongk/Spring/tree/main/ch2-ex1/src/main/java/org/spring)
