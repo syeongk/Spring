@@ -6,7 +6,7 @@
 
 ### @Component
 - [@Component, @ComponentScan 빈 주입](https://github.com/syeongk/Spring/tree/main/ch2-ex3/src/main/java/org/spring)
-
+  - @PostConstruct
 
   
 # 3 - 빈 간 관계 구현하기
