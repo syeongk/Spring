@@ -9,6 +9,7 @@
 
 ### @Component
 - [@Component 빈 주입](https://github.com/syeongk/Spring/tree/main/ch2-ex3/src/main/java/org/spring)
+  스프링 역할 : 해당 클래스의 인스턴스 생성 + 스프링 컨텍스트에 추가
   - @ComponentScan(basePackages = " ")
   - @PostConstruct
 
