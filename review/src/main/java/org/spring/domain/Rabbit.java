@@ -1,4 +1,4 @@
-package org.spring;
+package org.spring.domain;
 
 public class Rabbit {
 
