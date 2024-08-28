@@ -4,6 +4,7 @@ public class Person {
 
     private String name;
     private Rabbit rabbit;
+    private Parrot parrot;
 
     public void setName(String name) {
         this.name = name;
@@ -19,5 +20,13 @@ public class Person {
 
     public Rabbit getRabbit(){
         return rabbit;
+    }
+
+    public void setParrot(Parrot parrot){
+        this.parrot = parrot;
+    }
+
+    public Parrot getParrot(){
+        return parrot;
     }
 }

@@ -1,5 +1,7 @@
 package org.spring.domain;
 
+import org.springframework.stereotype.Component;
+
 public class Rabbit {
 
     private String name;
@@ -9,12 +11,12 @@ public class Rabbit {
     }
 
     public String getName(){
-        return this.name;
+        return name;
     }
 
     @Override
     public String toString(){
-        return "Rabbit: " + this.name;
+        return "Rabbit : " + name;
     }
 
 }

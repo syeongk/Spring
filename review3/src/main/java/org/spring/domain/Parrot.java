@@ -9,10 +9,13 @@ public class Parrot {
 
     private String name;
 
+    /*
     @PostConstruct
     public void init(){
         this.name = "키키";
     }
+
+     */
 
     public void setName(String name){
         this.name = name;
@@ -20,5 +23,9 @@ public class Parrot {
 
     public String getName(){
         return this.name;
+    }
+
+    public String toString(){
+        return "Parrot : " + name;
     }
 }
