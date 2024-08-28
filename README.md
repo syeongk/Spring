@@ -16,7 +16,7 @@
 
   
 # 3 - 빈 간 관계 구현하기
-### 와이어링
+### 구성 파일에서 와이어링
 - [빈을 반환하는 메서드를 직접 호출](https://github.com/syeongk/Spring/tree/main/ch3-ex2/src/main/java/org/spring)
 - [@Bean 메서드의 매개변수에 빈 호출](https://github.com/syeongk/Spring/tree/main/ch3-ex3/src/main/java/org/spring)
 
