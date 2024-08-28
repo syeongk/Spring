@@ -16,6 +16,9 @@
 
   
 # 3 - 빈 간 관계 구현하기
+의존성 : A 빈이 B 빈을 사용한다면 A 빈이 B 빈에 의존성을 갖는 것 <br>
+순환 의존성 : A 빈이 B 빈을 의존하고 B 빈이 A 빈을 의존하는 경우 빈 생성에 있어 문제가 발생한다.
+
 ### 구성 파일에서 와이어링
 - [빈을 반환하는 메서드를 직접 호출](https://github.com/syeongk/Spring/tree/main/ch3-ex2/src/main/java/org/spring)
 - [@Bean 메서드의 매개변수에 빈 호출](https://github.com/syeongk/Spring/tree/main/ch3-ex3/src/main/java/org/spring)
