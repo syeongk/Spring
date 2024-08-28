@@ -8,7 +8,7 @@
   - @Primary
 
 ### @Component
-- [@Component빈 주입](https://github.com/syeongk/Spring/tree/main/ch2-ex3/src/main/java/org/spring)
+- [@Component 빈 주입](https://github.com/syeongk/Spring/tree/main/ch2-ex3/src/main/java/org/spring)
   - @ComponentScan(basePackages = " ")
   - @PostConstruct
 
