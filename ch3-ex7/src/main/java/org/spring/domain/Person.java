@@ -9,7 +9,12 @@ public class Person {
 
     private String name = "김서영";
 
-    private Rabbit rabbit;
+    private final Rabbit rabbit;
+
+    @Autowired
+    public Person(@Qualifier("rabbit2") Rabbit rabbit){
+        this.rabbit = rabbit;
+    }
 
     public void setName(String name){
         this.name = name;
@@ -23,8 +28,4 @@ public class Person {
         return rabbit;
     }
 
-    @Autowired
-    public void setRabbit(@Qualifier("rabbit2") Rabbit rabbit){
-        this.rabbit = rabbit;
-    }
 }
