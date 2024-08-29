@@ -66,6 +66,9 @@ model : 앱이 사용하는 데이터를 모델링하는 객체 (POJO : 의존�
 ## 4 - 빈 스코프
 
 ### 싱글톤 빈 스코프
+고유한 인스턴스 이름에 대해 동일한 인스턴스 참조를 얻는다.
+- [@Bean](https://github.com/syeongk/Spring/tree/main/ch5-ex1/src/main/java/org/spring) : 클래스가 같더라도 이름이 다르다면 인스턴스를 여러 개 가질 수 있다.
+- [스테레오타입 애너테이션](https://github.com/syeongk/Spring/tree/main/ch5-ex2/src/main/java/org/spring) : 클래스 당 하나의 인스턴스를 가진다.
 
 #### 즉시 인스턴스 생성
 
