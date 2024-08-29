@@ -33,10 +33,10 @@ repository : 데이터베이스와 직접 작업하는 객체 <br>
 proxy : 앱 외부와 통신을 담당하는 객체 <br>
 model : 앱이 사용하는 데이터를 모델링하는 객체 (POJO : 의존성이 없는 단순 객체) <br>
 
-### 구현 간 결합
+- 구현 간 결합
 ![2023  12  5  - 198](https://github.com/user-attachments/assets/922efd51-4d02-4310-b71a-b62cd6918619)
 
-### [구현 간 분리](https://github.com/syeongk/Spring/tree/main/ch4-ex2/src/main/java/org/spring)
+- [구현 간 분리](https://github.com/syeongk/Spring/tree/main/ch4-ex2/src/main/java/org/spring)
 ![2023  12  5  - 201](https://github.com/user-attachments/assets/9224fcdf-8561-47b8-8710-914cc041ffe0)
 
 *interface, abstract class는 인스턴스화 할 수 없기때문에 스테레오타입 애너테이션을 추가하지 않는다.* <br>
