@@ -11,16 +11,16 @@ import org.springframework.stereotype.Service;
 public class CommentService {
 
     private final CommentRepository commentRepository;
+    private final CommentProcess commentProcess;
 
     @Autowired
-    private ApplicationContext context;
-
-    public CommentService(CommentRepository commentRepository) {
+    public CommentService(CommentRepository commentRepository, CommentProcess commentProcess) {
         this.commentRepository = commentRepository;
+        this.commentProcess = commentProcess;
     }
 
     public void sendComment(Comment comment) {
-        CommentProcess commentProcess = context.getBean(CommentProcess.class);
+
         commentProcess.setComment(comment);
         commentProcess.processComment();
 
