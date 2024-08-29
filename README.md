@@ -21,17 +21,16 @@ stereotype annotation : 스프링이 인스턴스를 생성하고 컨텍스트�
 의존성 : A 빈이 B 빈을 사용한다면 A 빈이 B 빈에 의존성을 갖는 것 <br>
 순환 의존성 : A 빈이 B 빈을 의존하고 B 빈이 A 빈을 의존하는 경우 빈 생성에 있어 문제가 발생한다.
 
-### 구성 파일에서 와이어링
+### 와이어링 : 구성 파일에서 의존성 주입
 - [빈을 반환하는 메서드를 직접 호출](https://github.com/syeongk/Spring/tree/main/ch3-ex2/src/main/java/org/spring)
 - [@Bean 메서드의 매개변수에 빈 호출](https://github.com/syeongk/Spring/tree/main/ch3-ex3/src/main/java/org/spring)
 
-### @Autowired
+### 오토와이어링 : @Autowired 의존성 주입
 - [클래스 필드로 의존성 주입](https://github.com/syeongk/Spring/blob/main/ch3-ex4/src/main/java/org/spring/domain/Person.java)
 - [생성자로 의존성 주입](https://github.com/syeongk/Spring/blob/main/ch3-ex5/src/main/java/org/spring/domain/Person.java)
 - [setter로 의존성 주입](https://github.com/syeongk/Spring/blob/main/ch3-ex6/src/main/java/org/spring/domain/Person.java)
 
-### 동일 타입 빈 중 선택해서 의존성 주입
-#### @Qualifier
+### 동일 타입 빈이 여러 개일 때, @Qualifier로 어떤 빈을 주입할지 알리기
 - [구성 파일에서](https://github.com/syeongk/Spring/blob/main/ch3-ex3/src/main/java/org/spring/config/ProjectConfig.java)
 - [생성자 매개변수에서](https://github.com/syeongk/Spring/blob/main/ch3-ex7/src/main/java/org/spring/domain/Person.java)
 
