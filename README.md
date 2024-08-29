@@ -66,12 +66,20 @@ model : 앱이 사용하는 데이터를 모델링하는 객체 (POJO : 의존�
 ## 4 - 빈 스코프
 
 ### 싱글톤 빈 스코프
-고유한 인스턴스 이름에 대해 동일한 인스턴스 참조를 얻는다.
+고유한 인스턴스 이름에 대해 동일한 인스턴스 참조를 얻는다. 변경 가능한 속성 포함 권장X
 - [@Bean](https://github.com/syeongk/Spring/tree/main/ch5-ex1/src/main/java/org/spring) : 클래스가 같더라도 이름이 다르다면 인스턴스를 여러 개 가질 수 있다.
 - [스테레오타입 애너테이션](https://github.com/syeongk/Spring/tree/main/ch5-ex2/src/main/java/org/spring) : 클래스 당 하나의 인스턴스를 가진다.
 
-#### 즉시 인스턴스 생성
+#### [즉시 인스턴스 생성](https://github.com/syeongk/Spring/tree/main/ch5-ex3/src/main/java/org/spring)
+빈이 사용되지 않더라도 빈을 생성한다.
 
-#### 지연 인스턴스 생성
+#### [지연 인스턴스 생성 : @Lazy](https://github.com/syeongk/Spring/tree/main/ch5-ex4/src/main/java/org/spring)
+빈이 사용될 때 빈을 생성한다.
 
-### 프로토타입 빈 스코프
+### 프로토타입 빈 스코프 : @Scope(BeanDefinition.SCOPE_PROTOTYPE)
+빈 이름을 참조할 때마다 새로운 인스턴스가 생성된다. 변경 가능한 속성 포함 가능
+- [@Bean](https://github.com/syeongk/Spring/blob/main/ch5-ex5/src/main/java/org/spring/config/ProjectConfig.java)
+- [스테레오타입 애너테이션](https://github.com/syeongk/Spring/blob/main/ch5-ex6/src/main/java/org/spring/repositories/CommentRepository.java)
+  
+- [동시성 문제](https://github.com/syeongk/Spring/tree/main/ch5-ex8/src/main/java/org/spring)
+- [프로토타입 빈 스코프 - 동시성 문제 해결](https://github.com/syeongk/Spring/tree/main/ch5-ex7/src/main/java/org/spring)
