@@ -26,6 +26,14 @@ stereotype annotation : 스프링이 인스턴스를 생성하고 컨텍스트�
 - [@Bean 메서드의 매개변수에 빈 호출](https://github.com/syeongk/Spring/tree/main/ch3-ex3/src/main/java/org/spring)
 
 ### @Autowired
+- [클래스 필드로 의존성 주입](https://github.com/syeongk/Spring/blob/main/ch3-ex4/src/main/java/org/spring/domain/Person.java)
+- [생성자로 의존성 주입](https://github.com/syeongk/Spring/blob/main/ch3-ex5/src/main/java/org/spring/domain/Person.java)
+- [setter로 의존성 주입](https://github.com/syeongk/Spring/blob/main/ch3-ex6/src/main/java/org/spring/domain/Person.java)
+
+### 동일 타입 빈 중 선택해서 의존성 주입
+#### @Qualifier
+- [구성 파일에서](https://github.com/syeongk/Spring/blob/main/ch3-ex3/src/main/java/org/spring/config/ProjectConfig.java)
+- [생성자 매개변수에서](https://github.com/syeongk/Spring/blob/main/ch3-ex7/src/main/java/org/spring/domain/Person.java)
 
 # 4 - 추상화 : 인터페이스 for 구현 분리
 service : 사용 사례 구현하는 객체 <br>
