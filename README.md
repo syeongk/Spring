@@ -1,4 +1,6 @@
-# 2 - 스프링 컨텍스트에 빈 추가하기
+# SPRING
+
+## 1 - 스프링 컨텍스트에 빈 추가하기
 객체가 의존성이 있거나 그 자체로 의존성인 경우 스프링 컨텍스트에 추가해야 한다.
 
 ### @Bean
@@ -17,7 +19,7 @@ stereotype annotation : 스프링이 인스턴스를 생성하고 컨텍스트�
   - @PostConstruct
 
   
-# 3 - 의존성 주입 : 빈 간 관계 구현하기
+## 2 - 의존성 주입 : 빈 간 관계 구현하기
 의존성 : A 빈이 B 빈을 사용한다면 A 빈이 B 빈에 의존성을 갖는 것 <br>
 순환 의존성 : A 빈이 B 빈을 의존하고 B 빈이 A 빈을 의존하는 경우 빈 생성에 있어 문제가 발생한다.
 
@@ -34,7 +36,7 @@ stereotype annotation : 스프링이 인스턴스를 생성하고 컨텍스트�
 - [구성 파일에서](https://github.com/syeongk/Spring/blob/main/ch3-ex3/src/main/java/org/spring/config/ProjectConfig.java)
 - [생성자 매개변수에서](https://github.com/syeongk/Spring/blob/main/ch3-ex7/src/main/java/org/spring/domain/Person.java)
 
-# 4 - 추상화 : 인터페이스 for 구현 분리
+## 3 - 추상화 : 인터페이스 for 구현 분리
 service : 사용 사례 구현하는 객체 <br>
 repository : 데이터베이스와 직접 작업하는 객체 <br>
 proxy : 앱 외부와 통신을 담당하는 객체 <br>
