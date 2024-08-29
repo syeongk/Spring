@@ -33,9 +33,9 @@ stereotype annotation : 스프링이 인스턴스를 생성하고 컨텍스트�
 - [@Bean 메서드의 매개변수에 빈 호출](https://github.com/syeongk/Spring/tree/main/ch3-ex3/src/main/java/org/spring)
 
 ### 오토와이어링 : @Autowired 의존성 주입
-- [클래스 필드로 의존성 주입](https://github.com/syeongk/Spring/blob/main/ch3-ex4/src/main/java/org/spring/domain/Person.java)
-- [생성자로 의존성 주입](https://github.com/syeongk/Spring/blob/main/ch3-ex5/src/main/java/org/spring/domain/Person.java)
-- [setter로 의존성 주입](https://github.com/syeongk/Spring/blob/main/ch3-ex6/src/main/java/org/spring/domain/Person.java)
+- [클래스 필드 DI](https://github.com/syeongk/Spring/blob/main/ch3-ex4/src/main/java/org/spring/domain/Person.java)
+- [생성자 DI](https://github.com/syeongk/Spring/blob/main/ch3-ex5/src/main/java/org/spring/domain/Person.java)
+- [setter DI](https://github.com/syeongk/Spring/blob/main/ch3-ex6/src/main/java/org/spring/domain/Person.java)
 
 ### 동일 타입 빈이 여러 개일 때, @Qualifier로 어떤 빈을 주입할지 알리기
 - [구성 파일에서](https://github.com/syeongk/Spring/blob/main/ch3-ex3/src/main/java/org/spring/config/ProjectConfig.java)
