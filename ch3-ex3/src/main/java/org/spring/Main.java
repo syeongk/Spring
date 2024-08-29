@@ -10,7 +10,7 @@ public class Main {
         var context = new AnnotationConfigApplicationContext(ProjectConfig.class);
 
         Person p = context.getBean(Person.class);
-        Rabbit r = context.getBean(Rabbit.class);
+        Rabbit r = context.getBean("rabbit1", Rabbit.class);
 
         System.out.println(p.getName());
         System.out.println(r.getName());
