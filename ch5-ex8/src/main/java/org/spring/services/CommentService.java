@@ -1,5 +1,8 @@
-package org.spring;
+package org.spring.services;
 
+import org.spring.models.Comment;
+import org.spring.processes.CommentProcess;
+import org.spring.repositories.CommentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Service;
@@ -8,21 +11,18 @@ import org.springframework.stereotype.Service;
 public class CommentService {
 
     private final CommentRepository commentRepository;
+    private final CommentProcess commentProcess;
 
     @Autowired
-    private ApplicationContext context;
-
-    @Autowired
-    public CommentService(CommentRepository commentRepository) {
+    public CommentService(CommentRepository commentRepository, CommentProcess commentProcess) {
         this.commentRepository = commentRepository;
+        this.commentProcess = commentProcess;
     }
 
     public void sendComment(Comment comment) {
-        CommentProcess p = context.getBean(CommentProcess.class);
-        System.out.println("CommentProcess instance created!");
 
-        p.setComment(comment);
-        p.processComment(comment);
+        commentProcess.setComment(comment);
+        commentProcess.processComment();
 
         commentRepository.storeComment(comment);
     }

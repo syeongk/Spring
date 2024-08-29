@@ -1,9 +1,12 @@
 package org.spring;
 
+import org.spring.config.ProjectConfig;
+import org.spring.models.Comment;
+import org.spring.services.CommentService;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
         var context = new AnnotationConfigApplicationContext(ProjectConfig.class);
 
@@ -25,8 +28,6 @@ public class Main {
         commentService.sendComment(comment2);
 
         System.out.println(comment2);
-
-
 
 
     }

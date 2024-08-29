@@ -1,5 +1,7 @@
-package org.spring;
+package org.spring.processes;
 
+import org.spring.models.Comment;
+import org.spring.repositories.CommentRepository;
 import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
@@ -12,6 +14,7 @@ public class CommentProcess {
     private final CommentRepository commentRepository;
 
     public CommentProcess(CommentRepository commentRepository) {
+        System.out.println("CommentProcess instance created!");
         this.commentRepository = commentRepository;
     }
 
