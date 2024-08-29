@@ -8,6 +8,7 @@ Spring에 관한 기초적인 내용 정리 <br>
 객체가 의존성이 있거나 그 자체로 의존성인 경우 스프링 컨텍스트에 추가해야 한다.
 
 ### @Bean
+빈 : 스프링에서 관리하는 인스턴스
 스프링 컨텍스트 생성 시 @Bean 메서드 호출, 반환 값을 컨텍스트에 추가
 - [스프링 컨텍스트 및 인스턴스 생성](https://github.com/syeongk/Spring/tree/main/ch2-ex1/src/main/java/org/spring)
 - [스프링 컨텍스트에 여러 개의 빈 주입](https://github.com/syeongk/Spring/tree/main/ch2-ex1/src/main/java/org/spring)
