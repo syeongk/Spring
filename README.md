@@ -82,4 +82,4 @@ model : 앱이 사용하는 데이터를 모델링하는 객체 (POJO : 의존�
 - [스테레오타입 애너테이션](https://github.com/syeongk/Spring/blob/main/ch5-ex6/src/main/java/org/spring/repositories/CommentRepository.java)
   
 - [동시성 문제](https://github.com/syeongk/Spring/tree/main/ch5-ex8/src/main/java/org/spring)
-- [동시성 문제 해결](https://github.com/syeongk/Spring/tree/main/ch5-ex7/src/main/java/org/spring)
+- [프로토타입 빈 스코프 - 동시성 문제 해결](https://github.com/syeongk/Spring/tree/main/ch5-ex7/src/main/java/org/spring)
